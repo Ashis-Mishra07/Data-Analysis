@@ -1,0 +1,5 @@
+What actaully we do when we get any data ?
+    i .  Data Gathering
+    ii.  Data Cleaning
+    iii. EDA
+
