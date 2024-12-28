@@ -1,0 +1,22 @@
+import pandas as pd
+
+
+# to_csv
+dataframe_name.to_csv('file_name')
+dataframe_name.to_csv('file_name' , index=False)
+
+
+# to_excel
+temp_df.to_excel(' file_name.xlsx')
+temp_df.to_excel(' file_name.xlsx' , sheet_name = ' ')
+
+
+
+# to_html  and to_json and to_sql
+
+
+
+
+
+
+
