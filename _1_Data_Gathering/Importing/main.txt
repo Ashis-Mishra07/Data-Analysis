@@ -42,3 +42,40 @@ df = pd.read_csv('file_name')
         And it will divide the entire file into 5000 of each chunk and use a for loop to access the specidfic data
 
 
+
+
+
+
+           - Importing excel files process
+
+import pandas as pd 
+
+pd.read_excel('data.xlsx')
+
+
+
+
+
+            - Importing tsv file
+
+pd.read_csv('file_name' , sep='\')
+
+
+
+
+
+
+
+            - Importing JSON / SQL files
+
+pd.read_json(' file_name || url ' )
+
+# mysql.connector is a bridge between mysql and python so that they can communicate with each other
+pip install mysql.connector
+
+conn = mysql.connector.connect(host='localhost' , user ='root' , password ='' , database = ' ')
+pd.read_sql_query("SELECT * FROM CITY;" , conn)
+
+ 
+
+
