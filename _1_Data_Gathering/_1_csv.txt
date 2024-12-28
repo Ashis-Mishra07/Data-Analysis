@@ -1,0 +1,44 @@
+DATA GATHERING 
+
+
+1. Here  we will how to Import and Export the data from the Database , CSV , Excel , text , json 
+2. How to fetch data using API and via Web Scraping
+
+
+
+
+
+            - Importing csv files process
+
+csv -> comma separated values
+tsv -> tab separated values
+
+
+import pandas as pd 
+df = pd.read_csv('file_name')
+
+# By default the sep parameter is ',' so explicitly we hae to change it to '\t' in casde of tsv files
+# We can  also give customised names to each col after separating by names parameter 
+           names =[' ',' ',' ']
+# making a col as index  ->    index_col=' ' 
+# how to take only specific column only   ->   usecols = [' ' , ' ' , ' ']
+# usecols=[' '] , squeeze = True   -> this will only u to read only a single col , so the dataframe gets converted into a series
+# skiprows=[0,1]  -> this will not allow the row number 0 and 1 to get fetched
+# nrows=100  -> this will restrict to fetch only top 100 rows only 
+# how to change the encoding   -> encoding = 'latin-1'  #  bydefault the encoding is UTF-8
+# error_bad_lines = False   -> this will skip the lines which is having any extra cols in its row , or else or parser error_bad_lines
+# to overwrite the data type   -> dtype = {'target':int}
+# to parse the object into dates   -> parse_dates = ['col_name']
+# to convert the names of rows    -> converters = {'team1':rename}  
+          def rename(name):
+            if name == 'Royal Challenger Bangalore':
+                return 'RCB'
+            else:
+                return name
+    The above will conver the every occurance of royal challenger banagolre to RCB
+
+# to assume any value as NaN values so as not to evaluate it   ->  na_values = [ 'Male',' ' ]
+# Dividing a large dataset into chunks    -> chunksize = 5000
+        And it will divide the entire file into 5000 of each chunk and use a for loop to access the specidfic data
+
+

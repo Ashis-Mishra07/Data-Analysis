@@ -3,3 +3,42 @@ What actaully we do when we get any data ?
     ii.  Data Cleaning
     iii. EDA
 
+
+Q. What is Data Analysis ?
+A. Data Analysis is a process of inspecting , Cleaning , tranforming and modeling 
+   data with the goal of discovering useful information , informing conclusions and 
+   supporting decision making .
+
+
+
+The process of Data Analysis involves 
+   Asking Questions 
+   Data Wrangling ( means cleaning and sequncing the data for use)
+   Exploratory Data Analysis 
+   Drawing conclusions
+   Communicating Results
+
+1. Asking Questions depends on the knowledge on the topic you have on it , experinece u have on it.
+2. Data Wrangling refers to as data munging in short if the data is not conveying any meaning to ur use
+   then cleaning and collecting info is called __ .
+   -> Involves process like Data Gathering (from DB , Api) , 
+                            Data Assessing (how much memory , no of rows /cols , duplicate check) ,
+                            Data Cleaning  ( removing missing data , remove duplicates , incorrect data type)
+
+3. EDA , here u explore the data and better augment the data to easily work on it .
+   -> Involves process like Exploring Data ( Finding correlation , Covariance , plotting graphs )
+                            Augmenting Data ( removing outliers ,merging dataframes , adding new columns)
+
+4. Drawing conclusions means can predict the data  by ML , Inferential Statistics , Descriptive Statistics
+5. Communicating Results means showing the results in diff ways ppts , blogs , graphs , reports 
+
+
+The 5 parts of Data Analysis are very Dangling , may be there is a chance to have a some process in between a process
+so exporing and making it again is all about Analysis .
+
+
+
+
+
+
+
