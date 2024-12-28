@@ -1,0 +1,124 @@
+  Data Accessing
+In this step, the data is to be understood more deeply. Before implementing methods to clean it, you will 
+definitely need to have a better idea about what the data is about.
+
+
+Types of Unclean Data
+
+There are 2 kinds of unclean data
+
+DIRTY DATA (Data with Quality issues):
+     Dirty data, also known as low quality data. Low quality data has content issues.
+
+Duplicated data
+Missing Data
+Corrupt Data
+Inaccurate Data
+
+
+MESSY DATA (Data with tidiness issues):
+     Messy data, also known as untidy data. Untidy data has structural issues.Tidy data has the following properties:
+
+Each variable forms a column
+Each observation forms a row
+Each observational unit forms a table
+
+
+
+
+
+import pandas as pd
+import numpy as np
+
+patients = pd.read_csv('patients.csv')
+treatments = pd.read_csv('treatments.csv')
+adverse_reactions = pd.read_csv('adverse_reactions.csv')
+treatments_cut = pd.read_csv('treatments_cut.csv')
+
+
+Process of doing
+
+1. Write a summary for your data
+
+This is a dataset about 500 patients of which 350 patients participated in a clinical trial. None of the patients were using 
+Novodra (a popular injectable insulin) or Auralin (the oral insulin being researched) as their primary source of insulin before. 
+All were experiencing elevated HbA1c levels.
+
+All 350 patients were treated with Novodra to establish a baseline HbA1c level and insulin dose. 
+After 4 weeks, which isn’t enough time to capture all the change in HbA1c that can be attributed by the switch to Auralin or Novodra:
+
+    175 patients switched to Auralin for 24 weeks
+    175 patients continued using Novodra for 24 weeks
+Data about patients feeling some adverse effects is also recorded.
+
+
+2. Write Column descriptions
+
+Table -> patients:
+    patient_id: 
+    assigned_sex: 
+    given_name: 
+    surname: 
+    address: 
+    city:
+    state:
+    zip_code: 
+    country: 
+    contact: 
+    birthdate:
+    weight: 
+    height: 
+    bmi:
+
+Table -> treatments and treatment_cut:
+    given_name: 
+    surname: 
+    auralin: 
+    novodra: 
+    hba1c_start:
+    hba1c_end: 
+    hba1c_change: 
+Table -> adverse_reactions
+    given_name: 
+    surname: 
+    adverse_reaction:
+
+
+3. Add any additional information
+    Additional useful information:
+
+Insulin resistance varies person to person, which is why both starting median daily dose and ending median 
+daily dose are required, i.e., to calculate change in dose.
+
+It is important to test drugs and medical products in the people they are meant to help. 
+People of different age, race, sex, and ethnic group must be included in clinical trials. 
+This diversity is reflected in the patients table.
+
+
+
+
+Types of Assessment
+
+There are 2 types of assessment styles
+
+    Manual - Looking through the data manually in google sheets
+    Programmatic - By using pandas functions such as info(), describe() or sample()
+    Steps in Assessment
+
+There are 2 steps involved in Assessment
+
+    Discover
+    Document
+
+
+
+
+
+
+NOTE:
+https://colab.research.google.com/drive/1ca-jlBvJ4uqpbCHFFgCFp9akIY7FSmGc?usp=sharing#scrollTo=jgbn6X0fdi3R
+
+
+
+
+
