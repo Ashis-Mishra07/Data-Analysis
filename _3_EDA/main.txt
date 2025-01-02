@@ -1,0 +1,8 @@
+Process of EDA 
+
+1 . Separate it into column types 
+2 . Do the Unvariate analysis means doing operations on a single column , similarly if with two it is called bivariate analysis .
+3 . Then do the feature engineering , analysing the missing values and filling it 
+4 . Do the conclusion
+
+
